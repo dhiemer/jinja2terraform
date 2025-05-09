@@ -1,0 +1,19 @@
+
+infra:
+  ec2:
+    web:
+      ami_filter: defaulto1_ami_filter
+      subnets:
+        - defaulto10_subnet1a
+        - defaulto10_subnet1b
+  versions:
+    terraform_version: 10
+    aws_version: 10
+
+
+other:
+  addr: "default10_url:443"
+  database_service:
+    enabled: "yes"
+    enable_rds: "default10_true"  # Meow
+    enable_aurora: false  # Woof

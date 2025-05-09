@@ -1,0 +1,13 @@
+{% macro provider_tf(infra) %}
+terraform {
+  required_version = {{ infra.versions.terraform_version }}
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = {{ infra.versions.aws_version }}
+    }
+  }
+}
+{% endmacro %}
+

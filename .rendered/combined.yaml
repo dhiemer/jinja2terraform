@@ -1,0 +1,16 @@
+infra:
+  ec2:
+    web:
+      ami_filter: defaulto2_ami_filter
+      subnets:
+      - defaulto20_error.site
+      - defaulto20_internal.site
+  versions:
+    terraform_version: 20
+    aws_version: 20
+other:
+  addr: default10_url:443
+  database_service:
+    enabled: 'yes'
+    enable_rds: default10_true
+    enable_aurora: false

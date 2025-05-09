@@ -1,0 +1,5 @@
+infra:
+  versions:
+    terraform_version: 3.3.3
+    aws_version: 4.4.4
+

@@ -1,0 +1,9 @@
+terraform_version: {{ infra.versions.terraform_version }}
+ec2_subnets: {{ infra.ec2.web.subnets }}
+using_aurora: {{ other.database_service.enable_aurora }}
+enable_rds: {{ other.database_service.enable_rds }}
+
+
+
+{% import "provider_tf.j2" as provider_macro %}
+{{ provider_macro.provider_tf(infra) }}

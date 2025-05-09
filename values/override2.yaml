@@ -1,0 +1,11 @@
+infra:
+  ec2:
+    web:
+      ami_filter: defaulto2_ami_filter
+      subnets:
+        - defaulto20_error.site
+        - defaulto20_internal.site
+  versions:
+    terraform_version: 20
+    aws_version: 20
+
