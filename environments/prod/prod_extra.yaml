@@ -1,0 +1,11 @@
+infra:
+  ec2:
+    web:
+      ami_filter: defaulto2_ami_filter
+      subnets:
+        - defaulto20_subnet1a
+        - defaulto20_subnet1b
+  versions:
+    terraform_version: 7.7.7
+    aws_version: 8.8.8
+

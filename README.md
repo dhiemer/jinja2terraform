@@ -26,16 +26,10 @@ This project is a flexible, macro-enabled Terraform templating engine using **Ji
 ## 🔧 How to Use
 
 ```bash
-python render_templates.py \
-  --value_base values/base.yaml \
-  --value_files values/dev.yaml \
-  --target_files terraform \
-  --macros_dir macros \
-  --output_yaml combined.yaml \
-  --output_dir terraform_rendered
+python render_templates.py --environment dev
 ```
 
-Then you can `cd terraform_rendered/` and run:
+Then you can `cd .output/.terraform_rendered/modules/myFirstModule` and run:
 
 ```bash
 terraform init
@@ -51,3 +45,4 @@ terraform apply
 - [ ] Optional: YAML schema validation
 - [ ] Optional: Auto-lint rendered files
 
+PS C:\Gitlab\_Dave\jinja2terraform> cls ; python render_templates.py --environment dev 
