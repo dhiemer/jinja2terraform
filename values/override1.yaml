@@ -7,8 +7,8 @@ infra:
         - defaulto10_subnet1a
         - defaulto10_subnet1b
   versions:
-    terraform_version: 10
-    aws_version: 10
+    terraform_version: 5.5.5
+    aws_version: 6.6.6
 
 
 other:

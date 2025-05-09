@@ -1,4 +1,8 @@
 
+network:
+  region: us-east-1
+  env: dev
+
 infra:
   ec2:
     web:

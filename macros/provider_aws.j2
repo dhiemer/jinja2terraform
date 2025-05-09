@@ -1,0 +1,11 @@
+{% macro provider_aws(network,infra) %}
+
+provider "aws" {
+  region     = "{{ network.region }}"
+  default_tags {
+    tags = {
+      Environment   = {{ network.env }}
+    }
+  }
+}
+{% endmacro %}
